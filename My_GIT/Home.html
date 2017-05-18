@@ -4,13 +4,13 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style5.css">
+  <link rel="stylesheet" type="text/css" href="css/style6.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="navbar navbar-default" role="navigation">
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-container">
@@ -25,9 +25,18 @@
 			</div>
 			<div class="collapse navbar-collapse" id="navbar-container">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">About us</a></li>
-					<li><a href="#">Contact</a></li>
+					<li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-book"></span> About Us</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-question-sign"></span> Contact<span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#"><span class="glyphicon glyphicon-phone-alt"> Phone</span></a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-envelope"> EMail</span></a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-object-align-bottom"> Address</span></a></li>
+								<li class="divider"></li>
+								<li><a href="#"><span class="glyphicon glyphicon-map-marker"> Directions</span></a></li>
+							<ul>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -49,7 +58,7 @@
 						<img src="img/Tajmahal.png" alt="The Tajmahal"/>
 					</a>
 					<div class="media-body">
-						<h4>Priyanka   <em>1 January,2017</em></h4>
+						<h4>Priyanka   <em id="smallLetters">1 January,2017</em></h4>
 						<p id="smallinfo1">The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor, Shah Jahan, to house the tomb of his favourite wife, Mumtaz Mahal.</p>
 					</div>
 				</div>
@@ -61,7 +70,7 @@
 						<img src="img/TamanNigara.png" alt="The Taman Negara"/>
 					</a>
 					<div class="media-body">
-						<h4>Kritika   <em>1 January,2017</em></h4>
+						<h4>Kritika   <em id="smallLetters">1 January,2017</em></h4>
 						<p id="smallinfo1">Taman Negara is a vast national park in Malaysia on the Malay peninsula. It encompasses a sprawling tropical rainforest that's said to be 130 million years old. Kuala Tahan, the main entry point, is a base for the nearby canopy walkway, river trips and treks through the jungle to the top of Mt. Tahan.<p>
 					</div>
 				</div>

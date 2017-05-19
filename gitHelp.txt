@@ -1,0 +1,5 @@
+git status
+git add My_GIT/
+git commit -m "modified"
+git remote add origin https://github.com/Priyannkaa/MiniProjects.git
+git push https://github.com/Priyannkaa/MiniProjects.git --all

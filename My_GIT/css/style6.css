@@ -25,3 +25,7 @@ body{
 #smallLetters{
 	font-size:10px;
 }
+#menuitems{
+	font-size:12px;
+	font-family: "Times New Roman", Times, serif;
+}

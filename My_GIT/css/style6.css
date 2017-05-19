@@ -2,7 +2,12 @@ body{
 	min-height:2000px;
 	padding-top:60px;
 }
-
+@media(max-width:768px){
+	.input-group{
+		margin-bottom:5px;
+	}
+	
+}
 #countrySelect{
 	background-color:pink;
 }

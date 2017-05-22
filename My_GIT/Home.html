@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style6.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 <body>
 	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -43,7 +42,7 @@
 						<span class="input-group-addon">
 							<span class="glyphicon glyphicon-user"></span>
 						</span>
-						<input type="text" class="form-control input-sm" placeholder="Username"/>
+						<input type="text" class="form-control input-sm" placeholder="Username" data-toggle="tooltip" data-placement="below" title="Give your username/email"/>
 					</div>
 					<div class="input-group">
 						<span class="input-group-addon">
@@ -148,7 +147,35 @@
 		</div>
 			
 		<div class="row">
-			
+			<div class="col-md-12" align="center">
+				<div class="jumbotron">
+					<div class="btn-group">
+						<button class="btn btn-lg btn-info" data-toggle="modal" data-target="#modal1">Explore
+					</div>
+							<div class="modal fade" role="dialog" aria-hidden="true" id="modal1">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close float-right" data-dismiss="modal">X</button>
+											<h3 class="modal-title" id="fantasy">Welcome</h3>
+										</div>
+										<div class="modal-body">
+											<p id="smallinfo1">To shooting guns in Cambodia to eating Balut in the Phillippines, you’ll find the latest and best travel stories from the very people who have visited Asia. Enjoy the ride & remember to bring your chop sticks or nan-chucks, whichever you prefer.</p>
+											<a href="home.html">Home</a>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-warning" data-dismiss="modal">OK</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</button>
+						<button class="btn btn-lg btn-primary">Navigate</button>
+						<button class="btn btn-lg btn-success">Travel</button>
+						<button class="btn btn-lg btn-warning">Register</button>
+					</div>
+				
+			</div>
 		</div>
 		
 		<div class="row" align="center">
@@ -156,9 +183,17 @@
 				<span class="glyphicon glyphicon-copyright-mark"> Priyanka</span>
 			</div>
 		</div>
-	
-		
-		
 	</div>
+	
+	<!--Script below
+			Here-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("[data-toggle='tooltip']").tooltip();
+		});
+	</script>
+	
 </body>
 </html>

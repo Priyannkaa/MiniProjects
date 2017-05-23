@@ -5,8 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style6.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="	css/bootstrap.min.css">
 
+  <!--JavaScripts-->
+  
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+  
 </head>
 <body>
 	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -150,9 +155,7 @@
 			<div class="col-md-12" align="center">
 				<div class="jumbotron">
 					<div class="btn-group">
-						<div data-toggle="tooltip" data-placement="bottom" title="Explore places.Click on to know more">
-							<button class="btn btn-lg btn-info" data-toggle="modal" data-target="#modal1">Explore
-						</div>
+						<button class="btn btn-lg btn-info" data-toggle="modal" data-target="#modal1">Explore
 					</div>
 							<div class="modal fade" role="dialog" aria-hidden="true" id="modal1">
 								<div class="modal-dialog">
@@ -172,9 +175,9 @@
 								</div>
 							</div>
 						</button>
-						<button class="btn btn-lg btn-primary" data-toggle="tooltip" data-placement="bottom" title="Know your directions">Navigate</button>
-						<button class="btn btn-lg btn-success" data-toggle="tooltip" data-placement="bottom" title="Places you may like">Travel</button>
-						<button class="btn btn-lg btn-warning" data-toggle="tooltip" data-placement="bottom" title="Need more Knowledge">Register</button>
+						<button class="btn btn-lg btn-primary">Navigate</button>
+						<button class="btn btn-lg btn-success">Travel</button>
+						<button class="btn btn-lg btn-warning">Register</button>
 					</div>
 				
 			</div>
@@ -189,8 +192,7 @@
 	
 	<!--Script below
 			Here-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$("[data-toggle='tooltip']").tooltip();

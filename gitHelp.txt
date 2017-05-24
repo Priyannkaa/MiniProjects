@@ -5,4 +5,3 @@ git config --global user.email "34priyankagupta.com"
 git commit -m "modified project"
 git remote add origin https://github.com/Priyannkaa/MiniProjects.git
 git push https://github.com/Priyannkaa/MiniProjects.git --all
-

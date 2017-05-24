@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style6.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+  <!--Bootstrap Validator-->
+  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrapValidator.min.css">
+  <link rel="stylesheet" href="css/fuelux.min.css">
+
+  	<!--Script below
+			Here-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/bootstrapValidator.min.js" type="text/javascript"></script>
+	<script src="js/fuelux.min.js" type="text/javascript"></script>
+	
+</head>
+<body class="fuelux">
+	<div class="container">
+		<strong>Choose a category</strong>
+		
+		<label class="radio-custom radio-inline" id="radio1">Foods
+			<input class="sr-only" name="category" data-toggle=".foods" type="radio" value="">
+		</label>
+		<label class="radio-custom radio-inline" id="radio2">Drinks
+			<input class="sr-only" name="category" data-toggle=".drinks"  type="radio" value="">
+		</label>
+		
+		<div class="foods">
+		
+			<div class="checkbox" id="checkbox1">
+				<label class="checkbox-custom" data-initialize="checkbox">
+					<input class="sr-only" type="checkbox" value="">
+					<span class="checkbox-label">I like pizza</span>
+				</label>
+			</div>
+			<div class="checkbox" id="checkbox2">
+				<label class="checkbox-custom" data-initialize="checkbox">
+					<input class="sr-only" checked="checked" type="checkbox" value="">
+					<span class="checkbox-label">I like vegetables</span>
+				</label>
+			</div>
+		</div>
+		
+		<div class="drinks">
+		
+			<div class="checkbox" id="checkbox3">
+				<label class="checkbox-custom" data-initialize="checkbox">
+					<input class="sr-only" type="checkbox" value="">
+					<span class="checkbox-label">I like juice</span>
+				</label>
+			</div>
+			<div class="checkbox" id="checkbox4">
+				<label class="checkbox-custom" data-initialize="checkbox">
+					<input class="sr-only" checked="checked" type="checkbox" value="">
+					<span class="checkbox-label">I like soda</span>
+				</label>
+			</div>
+		</div>
+		
+	</div>
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".radio-custom").radio();
+	});
+</script>
+</html>

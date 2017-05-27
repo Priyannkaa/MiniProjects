@@ -28,12 +28,28 @@ body{
 	width:70px;
 }
 #smallLetters{
-	font-size:10px;
+	font-size:15px;
 }
 #menuitems{
-	font-size:12px;
+	font-size:13px;
 	font-family: "Times New Roman", Times, serif;
 }
 .carousel-inner > .item > img {
-    margin: 0 auto;
+  width:1380px;
+  height:350px;
 }
+.carousel {
+  width:1330px;
+  height:350px;
+  margin:auto;
+}
+#myThumbnails{
+	width:90px;
+	height:70px;
+}
+#myBigThumbnail{
+	width:700px;
+	height:500px;
+	margin:auto;
+}
+

@@ -1,0 +1,137 @@
+<html>
+  <title>Beach</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style6.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!--Carousel styling-->
+<style>.carousel-inner>.item>img{width:1380;height:400px;}</style>
+  
+</head>
+<body>
+	
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#"><img src="img/image1.png" style="width:40px;height:20px"/></a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuContent">
+					<span class="sr-only">Show and hide menu</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="menuContent">
+				<div class="container">
+					<ul class="nav navbar-nav" id="menuitems">
+						<li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-book"></span> About Us</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-question-sign"></span> Contact Us <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu" id="menuitems">
+								<li><a href="#"><span class="glyphicon glyphicon-envelope"> Email</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-phone-alt"> Phone</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-object-align-bottom"> Address</a></li>
+								<li><div class="divider"></div></li>
+								<li><a href="#"><span class="glyphicon glyphicon-map-marker"> Direction</a></li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-right" role="form">
+						<div class="input-group">
+							<span class="input-group-addon">
+								<span class="glyphicon glyphicon-user"></span>
+							</span>
+							<input type="text" class="form-control input-sm" placeholder="Username">
+						</div>
+						<div class="input-group">
+							<span class="input-group-addon">
+								<span class="glyphicon glyphicon-lock"></span>
+							</span>
+							<input type="text" class="form-control input-sm" placeholder="Password">
+						</div>
+						<button type="button" class="btn btn-success">Login</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</nav>
+				
+	
+	
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="3"></li>
+		</ol>
+		
+		<div class="carousel-inner">
+		
+			<div class="item active">
+				<img class="img-fluid" src="img/image1.png" alt="Beach 1">
+			</div>
+			<div class="item">
+				<img class="img-fluid" src="img/image2.png" alt="Beach 2">
+			</div>
+			<div class="item">
+				<img class="img-fluid" src="img/image3.png" alt="Beach 3">
+			</div>
+			<div class="item">
+				<img class="img-fluid" src="img/image4.png" alt="Beach 4" >
+			</div>
+			
+		</div>
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			 <span class="glyphicon glyphicon-chevron-left"></span>
+			 <span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">
+			 <span class="glyphicon glyphicon-chevron-right"></span>
+			 <span class="sr-only">Next</span>
+		</a>
+	</div>
+	<div class="jumbotron">
+		<div class="container">
+			<div class="col-md-6">	
+				<div class="container-fluid">
+					<h1 id="fantasy">Ocean</h1>
+					<button class="btn btn-info" data-toggle="collapse" data-target="#smallLetters">Read More</button>
+					<p class="collapse" id="smallLetters">If you are a beach person then its the right place to search you fantasy</p>
+				</div>
+			</div>
+		</div>
+	</div>
+		<div class="container-fluid">
+				<div class="media">
+					<a href="#" class="img-rounded pull-left" data-toggle="modal" data-target="#kovalam">
+						<img src="img/Kovalam.jpg" alt="Kovalam" id="myThumbnails"/>
+					</a>
+					<div class="media-body">
+						<h4>Kovalam</h4>
+						<button class="btn btn-warning btn-xs">Read More</button>
+					</div>
+				</div>
+				<div id="kovalam" class="modal fade" role="dialog">
+						<div class="modal-dialo modal-lg">
+							<div class="modal-content" style="margin:auto;">
+								<div class="modal-header">
+									<button class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<img src="img/Kovalam.jpg"/>
+								</div>
+								<div class="modal-footer">
+									<button class="btn btn-success" data-dismiss="modal">X</button>
+								</div>
+							</div>
+						</div>
+				</div>
+		</div>
+
+</body>
+</html>
